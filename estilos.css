@@ -7,18 +7,20 @@
 section{
 
     width: 1000px;
+    width: 90%;
     height:800px;
     background-color: aquamarine;
     margin:0 auto;
-    margin: top 120px;
+    margin: top 60px;
     display: flex;
+    flex-direction: row;
    /* flex-direction:row;  se mueve los items 
     flex-direction: row-reverse;
     flex-direction: column;
     flex-direction: column-reverse;*/
     flex-wrap: nowrap;
-    flex-wrap: wrap;
-    /*flex-wrap: wrap-reverse;
+    /*flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     flex-flow: column-reverse wrap;*/
     justify-content: flex-start;
     /*justify-content: end;
@@ -33,8 +35,8 @@ section{
     align-content:flex-end ;
     align-content:center ;
     align-content: space-between;
-    align-content: space-evenly;*/
-    gap: 10px;
+    align-content: space-evenly;
+    gap: 10px;*/
 
 }
 
@@ -42,10 +44,11 @@ section{
 section div{
     height: 200px;
     width: 200px;
-    background-color: #222;
+    background-color: aquamarine;
     color: #fff;
     border: 2px solid crimson;
     font-size: 30px;
+    
     
 
 }
@@ -56,3 +59,26 @@ font-size: 75px;
 section div:last-child{
     font-size: 60px;
 }*/
+section div:nth-child(1){
+    background-color: rgb(210, 30, 30);
+    /*order: 3;
+    flex-grow: 1;*/
+    flex:2 3 250px;
+     
+}
+
+section div:nth-child(2){
+    background-color: rgb(6, 61, 240);
+    /*order: 2;
+    flex-grow: 4;*/
+    align-self: flex-end;
+}
+section div:nth-child(3){
+    background-color: rgb(15, 212, 104);
+    /*order: 1;
+    flex-grow: 1;*/
+    /*flex-shrink: 4;*/
+   /* flex-basis: 300px;*/
+   
+}
+ 

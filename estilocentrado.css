@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+   
+    
+}
+
+section:nth-child(2){
+    background-color: brown;
+}
+
+section:nth-child(3){
+    background-color: rgb(8, 131, 202);
+}
+div{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagenes/margarita.jpg);
+    
+
+}
